@@ -1,0 +1,7 @@
+package Abstraction;
+
+public class Ladies extends Compartment {
+	public String notice() {
+        return "Ladies";
+    }
+}
