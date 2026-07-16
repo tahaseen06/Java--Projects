@@ -1,0 +1,20 @@
+public int isPalindrome(string input1)
+{
+    input1 = input1.ToLower();
+
+    int left = 0;
+    int right = input1.Length - 1;
+
+    while (left < right)
+    {
+        if (input1[left] != input1[right])
+        {
+            return 1;
+        }
+
+        left++;
+        right--;
+    }
+
+    return 2;
+}

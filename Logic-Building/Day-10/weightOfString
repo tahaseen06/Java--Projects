@@ -1,0 +1,18 @@
+public int weightOfString(string input1, int input2)
+{
+    int sum = 0;
+    input1 = input1.ToLower();
+
+    foreach (char ch in input1)
+    {
+        if (ch >= 'a' && ch <= 'z')
+        {
+            if (input2 == 0 && "aeiou".Contains(ch))
+                continue;
+
+            sum += (ch - 'a' + 1);
+        }
+    }
+
+    return sum;
+}
