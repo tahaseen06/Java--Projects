@@ -1,0 +1,24 @@
+package com.wipro.thread;
+
+class MyThread extends Thread {
+
+    public MyThread(String name) {
+        super(name);
+    }
+
+    public void run() {
+        System.out.println("Thread Name : " + getName());
+    }
+}
+
+public class ThreadNames {
+
+    public static void main(String[] args) {
+
+        MyThread t1 = new MyThread("Scooby");
+        MyThread t2 = new MyThread("Shaggy");
+
+        t1.start();
+        t2.start();
+    }
+}
