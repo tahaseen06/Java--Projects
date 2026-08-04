@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms using Div Tags</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        div{
+            width: 650px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: white;
+        }
+
+        table{
+            width: 100%;
+        }
+
+        td{
+            padding: 8px;
+        }
+
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- First Form -->
+<div>
+
+<h2>Visitors Information</h2>
+<hr>
+
+<form>
+
+<table>
+
+<tr>
+    <td>Email Address</td>
+    <td><input type="email" name="email"></td>
+</tr>
+
+<tr>
+    <td>User's Interest</td>
+    <td>
+        <input type="checkbox" name="interest" value="Research"> Research
+        <input type="checkbox" name="interest" value="Purchase"> Purchase
+    </td>
+</tr>
+
+<tr>
+    <td>Occupation</td>
+    <td>
+        <select>
+            <option selected>Select One</option>
+            <option>Student</option>
+            <option>Employee</option>
+            <option>Business</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td>Want us to send you junk emails?</td>
+    <td>
+        <input type="radio" name="mail"> Absolutely
+        <input type="radio" name="mail"> No way man
+    </td>
+</tr>
+
+<tr>
+    <td colspan="2" align="center">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </td>
+</tr>
+
+</table>
+
+</form>
+
+</div>
+
+<!-- Second Form -->
+<div>
+
+<h2>Online Registration Form</h2>
+
+<form>
+
+<table>
+
+<tr>
+    <td>Username</td>
+    <td><input type="text" name="username"></td>
+</tr>
+
+<tr>
+    <td>Password</td>
+    <td><input type="password" name="password"></td>
+</tr>
+
+<tr>
+    <td>Confirm Password</td>
+    <td><input type="password" name="confirm"></td>
+</tr>
+
+<tr>
+    <td>Name</td>
+    <td><input type="text" name="name"></td>
+</tr>
+
+<tr>
+    <td>Gender</td>
+    <td>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+    </td>
+</tr>
+
+<tr>
+    <td>Address</td>
+    <td>
+        <textarea rows="4" cols="30"></textarea>
+    </td>
+</tr>
+
+<tr>
+    <td>Profession</td>
+    <td>
+        <select>
+            <option>Student</option>
+            <option>Engineer</option>
+            <option>Teacher</option>
+            <option>Doctor</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="2" align="center">
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </td>
+</tr>
+
+</table>
+
+</form>
+
+</div>
+
+</body>
+</html>
